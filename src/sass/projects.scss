@@ -1,0 +1,132 @@
+
+// ----------------------------
+.banner {
+    .row {
+        .col-12 {
+            padding: 0 !important;
+
+            .banner-img {
+
+                position: relative;
+                background-image: url(../images/b3.jpg) !important;
+                background-repeat: no-repeat;
+                background-position: 50% 10%;
+                height: 250px;
+
+                .overlay {
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    background: #413c697b;
+                    height: 100%;
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    h1 {
+                        color: $font-color;
+                    }
+                }
+            }
+        }
+    }
+}
+// ----------------------------
+.our-work{
+    .container{
+        .row{
+            .card{
+                .custom-btn{
+                    background-color: $bg;
+                    color:$font-color;
+                    border: none;
+                    border-radius:3px;
+                    position: absolute;
+                    top: 9px;
+                    right: 9px;
+                    &:hover,
+                    &:focus{
+                        background-color: $font-color;
+                        color: $bg;
+                    }
+                }
+            }
+        }
+    }
+}
+// ----------------------------
+// ----------------------------
+// ----------------------------
+// ----------------------------
+.modal-header{
+  .btn , button.close{
+    &:focus,
+    &:active {
+        outline: none !important;
+    box-shadow: none !important;
+    }
+    width:30px;
+    height:30px;
+    border: none;
+    background-color: $bg;
+    color: $font-color;
+    border-radius: 3px;
+    font-weight: bold;
+    span{
+        font-size: 20px;
+    }
+  }
+  h4{
+    color: $bg;
+  }
+}
+#image-gallery{
+    .modal-footer{
+        display: flex;
+        justify-content: space-between;
+      }
+} 
+  
+.thumb{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    
+}
+.modal-footer{
+    button{
+        border: none;
+        background-color: $bg;
+        color: $font-color;
+        font-weight: bold;
+        &:hover{
+            background-color: $font-color;
+            color: $bg;
+        }
+
+    }
+}
+.row{
+    .card{
+        .card-body{
+            h3{
+                color: $bg;
+            }
+            span{
+                font-weight: bold;               
+            }
+        }
+    }
+}
+@media(max-width:767px){
+    .modal{       
+        .modal-content{
+            width: 100%;
+            .modal-body{
+                img{
+                    width: 90%;
+                }
+            }
+        }
+    }
+}

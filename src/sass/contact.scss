@@ -1,0 +1,44 @@
+.contact {
+                    .contact-info {
+                        p {
+                            .svg-inline--fa {
+                                color: $bg;
+                                margin-left: 5px;
+                            }
+                        }
+                    }
+                    .social-icon{
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        width:35px;
+                        height: 35px;
+                        border-radius: 5px;
+                        margin: 5px;
+                        color:$font-color;
+                        background-color: $bg;
+                        transition: 0.2s;
+                        &:hover,:focus{
+                            background-color: $font-color;
+                            color: $bg;
+                        }
+                    }
+                    input[type=email]{
+                        text-align: right;
+                    }
+                    input,textarea{
+                        color: $bg;
+                        &:focus{
+                            box-shadow: none;
+                            border-color: $bg;
+                            color: $bg;
+                        }
+                    }
+                }
+@media (max-width:767px) {
+    .contact{
+        .col-md-7{
+            margin-top: 50px;
+        }
+    }
+}

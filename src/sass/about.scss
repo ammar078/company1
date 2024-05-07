@@ -1,0 +1,44 @@
+.banner-about {
+                    .row {
+                        .col-12 {
+                            .banner-img {
+                                background-image: url(../images/about-banner.jpg) !important;
+                                background-position: 50% 67%;
+                            }
+                        }
+                    }
+                }
+.our-team{
+    .card-body{
+        h5{
+            color: $bg;
+        }
+        p{
+            color: rgb(129, 129, 129);
+        }
+        img{
+            border-radius: 5px;
+        }
+        .social{
+            display: flex;
+                align-items: center;
+                justify-content: center;
+            .social-icon{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width:35px;
+                height: 35px;
+                border-radius: 5px;
+                margin: 5px;
+                color:$font-color;
+                background-color: $bg;
+                transition: 0.2s;
+                &:hover,:focus{
+                    background-color: $font-color;
+                    color: $bg;
+                }
+            }
+        }
+    }
+}                

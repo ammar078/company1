@@ -1,0 +1,94 @@
+@import './variable';
+.banner-blog {
+    .row {
+        .col-12 {
+            padding: 0 !important;
+
+            .banner-img {                
+                background-image: url(../images/blog1.jpg) !important;  
+                background-position: 50% 100%;             
+            }
+        }
+    }
+}
+.blogs{
+  .search-box{
+    border: 1px solid rgb(174, 174, 174);
+    padding: 15px 10px;
+    border-radius: 5px;
+    h5{
+        color: $bg;
+    }
+    input{
+        color: $bg;
+        &:focus{
+            box-shadow: none;
+            border: 1px solid $bg;
+            
+        }
+    }
+    }
+    .card{
+        .card-body{
+            h4{
+                color: $bg;
+            }
+            p{
+                color: rgb(113, 113, 113);
+            }
+        }
+    }
+}
+.blog-details{
+    .card{
+        .card-body{
+            h2,h5{
+                color: $bg;
+            }
+            span{
+                color: rgb(134, 134, 134);
+            }
+            p{
+                color: rgb(107, 107, 107);
+            }
+            .social{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                float: left;
+                span{
+                    color: $bg;
+                }
+                .social-icon{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width:35px;
+                    height: 35px;
+                    border-radius: 5px;
+                    margin: 5px;
+                    color:$font-color;
+                    background-color: $bg;
+                    transition: 0.2s;
+                    &:hover,:focus{
+                        background-color: $font-color;
+                        color: $bg;
+                    }
+                }
+            }
+        }
+    }
+}
+.add-blog{
+    .row{
+        h5{
+            color: $bg;
+        }
+        input,textarea{
+            &:focus{
+                box-shadow: none;
+                border-color: $bg;
+            }
+        }
+    }
+}
